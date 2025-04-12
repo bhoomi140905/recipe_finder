@@ -12,7 +12,7 @@ async function findRecipes() {
     const sampleRecipes = [
         {
             title: "Tomato Cheese Pasta",
-            image: "https://via.placeholder.com/250x150?text=Tomato+Cheese+Pasta",
+            image: "/Users/ishweenkaur/Desktop/tom and chesse pasta.jpeg?text=Tomato+Cheese+Pasta",
             description: "A delicious pasta made with tomatoes and cheese."
         },
         {
