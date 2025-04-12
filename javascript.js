@@ -20,7 +20,7 @@ async function findRecipes() {
             image: "/Users/ishweenkaur/Desktop/soup.jpeg?text=Cheesy+Tomato+Soup",
             description: "A warm soup perfect for any day."
         }
-    ];
+    ]
 
     // Loop through recipes and create cards
     sampleRecipes.forEach(recipe => {

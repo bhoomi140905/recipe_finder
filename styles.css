@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #708faf;
+    background-color: #c1dbf5;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ input[type="text"] {
 
 button {
     padding: 10px 15px;
-    background-color: #28a745;
+    background-color: #2911dde4;
     color: white;
     border: none;
     border-radius: 5px;
