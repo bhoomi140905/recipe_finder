@@ -12,12 +12,12 @@ async function findRecipes() {
     const sampleRecipes = [
         {
             title: "Tomato Cheese Pasta",
-            image: "/Users/ishweenkaur/Desktop/tom and chesse pasta.jpeg?text=Tomato+Cheese+Pasta",
+            image: "/Users/ishweenkaur/Desktop/download 3.jpeg?text=Tomato+Cheese+Pasta",
             description: "A delicious pasta made with tomatoes and cheese."
         },
         {
             title: "Cheesy Tomato Soup",
-            image: "/Users/ishweenkaur/Desktop/download 3.jpeg?text=Cheesy+Tomato+Soup",
+            image: "/Users/ishweenkaur/Desktop/soup.jpeg?text=Cheesy+Tomato+Soup",
             description: "A warm soup perfect for any day."
         }
     ];
