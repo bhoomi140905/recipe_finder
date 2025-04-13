@@ -1,14 +1,15 @@
 async function findRecipes() {
-    const ingredients = document.getElementById('ingredientInput').value.trim();
+    const input = document.getElementById('ingredientInput').value.trim().toLowerCase();
     const recipeList = document.getElementById('recipeList');
     recipeList.innerHTML = ''; // Clear previous results
 
-    if (!ingredients) {
+    if (!input) {
         alert("Please enter at least one ingredient.");
         return;
     }
 
-    // Example recipes with full info
+    const inputIngredients = input.split(',').map(i => i.trim());
+
     const sampleRecipes = [
         {
             title: "Tomato Cheese Pasta",
@@ -35,11 +36,59 @@ async function findRecipes() {
                 "Salt and pepper to taste"
             ],
             instructions: "1. Boil and blend tomatoes.\n2. Add broth and garlic in a pan.\n3. Add blended tomatoes.\n4. Stir in cheese until melted.\n5. Season and serve warm."
+        },
+        {
+            title: "Garlic Butter Mushrooms",
+            image: "images/garlic-mushrooms.jpeg",
+            description: "Sautéed mushrooms in a delicious garlic butter sauce.",
+            ingredients: [
+                "200g mushrooms",
+                "2 tbsp butter",
+                "3 cloves garlic, minced",
+                "1 tbsp parsley",
+                "Salt and pepper to taste"
+            ],
+            instructions: "1. Melt butter in a pan.\n2. Add garlic and cook for 1 minute.\n3. Add mushrooms and sauté for 5-7 minutes.\n4. Add salt, pepper, and parsley.\n5. Serve warm."
+        },
+        {
+            title: "Grilled Cheese Sandwich",
+            image: "images/grilled-cheese.jpeg",
+            description: "Crispy golden bread with gooey melted cheese inside.",
+            ingredients: [
+                "2 slices of bread",
+                "2 slices of cheese",
+                "1 tbsp butter"
+            ],
+            instructions: "1. Butter one side of each bread slice.\n2. Place cheese between bread, buttered sides out.\n3. Grill on a pan until golden and crispy.\n4. Flip and cook the other side.\n5. Serve hot."
+        },
+        {
+            title: "Veggie Omelette",
+            image: "images/omelette.jpeg",
+            description: "A fluffy omelette packed with colorful veggies.",
+            ingredients: [
+                "2 eggs",
+                "1/4 cup chopped onions",
+                "1/4 cup bell peppers",
+                "1 tbsp milk",
+                "Salt and pepper to taste",
+                "1 tsp oil or butter"
+            ],
+            instructions: "1. Whisk eggs with milk, salt, and pepper.\n2. Heat oil in a pan and sauté veggies.\n3. Pour in the egg mixture.\n4. Cook until set, then fold and serve."
         }
     ];
 
-    // Create and append recipe cards
-    sampleRecipes.forEach(recipe => {
+    // Filter recipes based on all input ingredients being present
+    const filteredRecipes = sampleRecipes.filter(recipe => {
+        const recipeText = recipe.ingredients.join(' ').toLowerCase();
+        return inputIngredients.every(ing => recipeText.includes(ing));
+    });
+
+    if (filteredRecipes.length === 0) {
+        recipeList.innerHTML = "<p>No matching recipes found. Try different ingredients!</p>";
+        return;
+    }
+
+    filteredRecipes.forEach(recipe => {
         const card = document.createElement('div');
         card.className = 'recipe-card';
         card.innerHTML = `
@@ -58,7 +107,6 @@ function showRecipeModal(recipe) {
     document.getElementById('modalImage').alt = recipe.title;
     document.getElementById('modalDescription').textContent = recipe.description;
 
-    // Ingredients
     const ingredientsList = document.getElementById('modalIngredients');
     ingredientsList.innerHTML = '';
     recipe.ingredients.forEach(item => {
@@ -67,9 +115,7 @@ function showRecipeModal(recipe) {
         ingredientsList.appendChild(li);
     });
 
-    // Instructions
     document.getElementById('modalInstructions').textContent = recipe.instructions;
-
     document.getElementById('recipeModal').style.display = 'block';
 }
 
