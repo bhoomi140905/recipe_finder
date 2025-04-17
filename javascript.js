@@ -1,4 +1,4 @@
-function findRecipes() {
+ffunction findRecipes() {
   const input = document.getElementById("ingredientInput").value.trim().toLowerCase();
   const recipeList = document.getElementById("recipeList");
   recipeList.innerHTML = "";
@@ -34,7 +34,7 @@ function findRecipes() {
         "1 cup vegetable broth",
         "50g cheese",
         "1 tsp garlic",
-        "Salt and pepper to taste.",
+        "Salt and pepper to taste",
       ],
       instructions:
         "1. Boil and blend tomatoes.\n2. Add broth and garlic in a pan.\n3. Add blended tomatoes.\n4. Stir in cheese until melted.\n5. Season and serve warm.",
@@ -121,5 +121,20 @@ function showRecipeModal(recipe) {
   document.getElementById('modalTitle').textContent = recipe.title;
   document.getElementById('modalImage').src = recipe.image;
   document.getElementById('modalImage').alt = recipe.title;
-  document.getElementById('modalDescription').textContent = recipe
+  document.getElementById('modalDescription').textContent = recipe.description;
+
+  const ingredientsList = document.getElementById('modalIngredients');
+  ingredientsList.innerHTML = '';
+  recipe.ingredients.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    ingredientsList.appendChild(li);
+  });
+
+  document.getElementById('modalInstructions').textContent = recipe.instructions;
+  document.getElementById('recipeModal').style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById('recipeModal').style.display = 'none';
 }
