@@ -77,7 +77,7 @@ async function findRecipes() {
       },
       {
           title: "Garlic Bread",
-          image: "images/garlic-bread.jpeg",
+          image: "images/garlicbread.jpeg",
           description: "Toasted bread slices with flavorful garlic butter.",
           ingredients: [
               "1 loaf of French bread",
