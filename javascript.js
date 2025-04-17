@@ -34,7 +34,7 @@ function findRecipes() {
         "1 cup vegetable broth",
         "50g cheese",
         "1 tsp garlic",
-        "Salt and pepper to taste",
+        "Salt and pepper to taste.",
       ],
       instructions:
         "1. Boil and blend tomatoes.\n2. Add broth and garlic in a pan.\n3. Add blended tomatoes.\n4. Stir in cheese until melted.\n5. Season and serve warm.",
