@@ -63,7 +63,7 @@ async function findRecipes() {
       },
       {
           title: "Veggie Omelette",
-          image: "images/omelette.jpeg",
+          image: "images/veggieomelette.jpeg",
           description: "A fluffy omelette packed with colorful veggies.",
           ingredients: [
               "2 eggs",
