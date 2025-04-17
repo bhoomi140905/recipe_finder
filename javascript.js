@@ -122,3 +122,4 @@ function showRecipeModal(recipe) {
   document.getElementById('modalImage').src = recipe.image;
   document.getElementById('modalImage').alt = recipe.title;
   document.getElementById('modalDescription').textContent = recipe
+}
