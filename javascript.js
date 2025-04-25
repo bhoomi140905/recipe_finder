@@ -61,7 +61,7 @@ async function findRecipes() {
       },
       {
         title: "Grilled Cheese Sandwich",
-        image: "images/grilled-cheese.jpeg",
+        image: "images/grilledcheese.jpeg",
         description: "Crispy golden bread with gooey melted cheese inside.",
         ingredients: [
           "2 slices of bread",
