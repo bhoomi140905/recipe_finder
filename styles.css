@@ -67,11 +67,10 @@ button {
 }
 
 .recipe-card img {
-  width: 100%;
-  height: auto; /* Let it scale naturally */
-  max-height: 300px; /* Optional: prevents images from being too tall */
-  object-fit: contain; /* Show the whole image without cropping */
-  border-radius: 5px;
+  width: 225px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 8px;
   display: block;
   margin: 0 auto;
 }
