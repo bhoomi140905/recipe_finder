@@ -79,6 +79,8 @@ button:hover {
 /* Horizontal scroll */
 .recipes {
   display: flex;
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between cards */
   flex-direction: row;
   flex-wrap: nowrap;
   overflow-x: auto;
