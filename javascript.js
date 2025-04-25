@@ -18,7 +18,7 @@ async function findRecipes() {
     await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate delay
   
     const inputIngredients = input.split(',').map(i => i.trim());
-  
+
     const sampleRecipes = [
       {
         title: "Tomato Cheese Pasta",
@@ -96,9 +96,65 @@ async function findRecipes() {
           "Salt to taste"
         ],
         instructions: "1. Mix minced garlic with softened butter and parsley.\n2. Spread on sliced bread.\n3. Toast in oven until golden and crispy.\n4. Serve hot."
+      },
+      {
+        title: "Spicy Paneer Wrap",
+        image: "images/paneer-wrap.jpeg",
+        description: "A spicy Indian-style wrap with paneer and veggies.",
+        ingredients: [
+          "100g paneer",
+          "1 tortilla or wrap",
+          "1/4 cup onions",
+          "1/4 cup bell peppers",
+          "1 tbsp yogurt",
+          "1 tsp chili powder",
+          "Salt to taste"
+        ],
+        instructions: "1. Marinate paneer in yogurt, chili, and salt.\n2. Sauté onions and peppers.\n3. Add paneer and cook until golden.\n4. Place mixture in wrap and roll tightly.\n5. Grill if desired and serve."
+      },
+      {
+        title: "Avocado Toast",
+        image: "images/avocado-toast.jpeg",
+        description: "A healthy and simple breakfast option.",
+        ingredients: [
+          "2 slices of whole grain bread",
+          "1 ripe avocado",
+          "1 tsp lemon juice",
+          "Chili flakes",
+          "Salt and pepper to taste"
+        ],
+        instructions: "1. Toast the bread slices.\n2. Mash avocado with lemon juice, salt, and pepper.\n3. Spread on toast.\n4. Sprinkle chili flakes.\n5. Serve immediately."
+      },
+      {
+        title: "Caprese Salad",
+        image: "images/caprese-salad.jpeg",
+        description: "Classic Italian salad with tomato, basil, and mozzarella.",
+        ingredients: [
+          "2 tomatoes",
+          "Fresh mozzarella",
+          "Fresh basil leaves",
+          "1 tbsp olive oil",
+          "Salt and pepper to taste"
+        ],
+        instructions: "1. Slice tomatoes and mozzarella.\n2. Arrange alternately on a plate with basil.\n3. Drizzle with olive oil.\n4. Season with salt and pepper.\n5. Serve chilled."
+      },
+      {
+        title: "Peanut Butter Banana Smoothie",
+        image: "images/banana-smoothie.jpeg",
+        description: "A creamy and energy-packed smoothie.",
+        ingredients: [
+          "1 banana",
+          "1 tbsp peanut butter",
+          "1/2 cup milk (or almond milk)",
+          "1/4 tsp cinnamon",
+          "Ice cubes"
+        ],
+        instructions: "1. Add all ingredients to a blender.\n2. Blend until smooth.\n3. Pour into a glass and enjoy cold."
       }
     ];
   
+    
+        
     const filteredRecipes = sampleRecipes.filter(recipe => {
       const recipeIngredients = recipe.ingredients.map(ing => ing.toLowerCase());
       const matchCount = inputIngredients.filter(ing =>
