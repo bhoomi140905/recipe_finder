@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -8,16 +8,19 @@
 </head>
 <body>
   <div class="container">
-    <h1>Smart Recipe Finder</h1>
-    <div class="search-box">
-      <input
-        type="text"
-        id="ingredientInput"
-        placeholder="Enter ingredients (e.g. tomato, cheese)"
-        aria-label="Ingredient input"
-      />
-      <button onclick="findRecipes()">Find Recipes</button>
+    <div class="intro-section">
+      <h1>Smart Recipe Finder</h1>
+      <div class="search-box">
+        <input
+          type="text"
+          id="ingredientInput"
+          placeholder="Enter ingredients (e.g. tomato, cheese)"
+          aria-label="Ingredient input"
+        />
+        <button onclick="findRecipes()">Find Recipes</button>
+      </div>
     </div>
+
     <div class="loading" id="loadingMessage" style="display:none;">Searching for recipes...</div>
     <div class="recipes" id="recipeList"></div>
   </div>
