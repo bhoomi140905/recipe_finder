@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Recipe Finder</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Smart Recipe Finder</h1>
-        <div class="search-box">
-            <input type="text" id="ingredientInput" placeholder="Enter ingredients (e.g. tomato, cheese)">
-            <button onclick="findRecipes()">Find Recipes</button>
-        </div>
-        <div class="recipes" id="recipeList"></div>
+  <div class="container">
+    <h1>Smart Recipe Finder</h1>
+    <div class="search-box">
+      <input
+        type="text"
+        id="ingredientInput"
+        placeholder="Enter ingredients (e.g. tomato, cheese)"
+        aria-label="Ingredient input"
+      />
+      <button onclick="findRecipes()">Find Recipes</button>
     </div>
+    <div class="loading" id="loadingMessage" style="display:none;">Searching for recipes...</div>
+    <div class="recipes" id="recipeList"></div>
+  </div>
 
-    <div id="recipeModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button" onclick="closeModal()">&times;</span>
-            <h2 id="modalTitle"></h2>
-            <img id="modalImage" src="" alt="">
-            <p id="modalDescription"></p>
-            <h4>Ingredients:</h4>
-            <ul id="modalIngredients"></ul>
-            <h4>Instructions:</h4>
-            <pre id="modalInstructions"></pre>
-        </div>
+  <div id="recipeModal" class="modal" aria-modal="true" role="dialog">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()" aria-label="Close modal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImage" src="" alt="">
+      <p id="modalDescription"></p>
+      <h4>Ingredients:</h4>
+      <ul id="modalIngredients"></ul>
+      <h4>Instructions:</h4>
+      <pre id="modalInstructions"></pre>
     </div>
+  </div>
 
-    <script src="javascript.js"></script>
+  <script src="javascript.js"></script>
 </body>
 </html>
