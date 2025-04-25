@@ -48,13 +48,20 @@ input.invalid {
 }
 
 button {
-  padding: 10px 15px;
-  background-color: #2911dde4;
-  color: black;
+  padding: 10px 20px;
+  background-color: #ff7f50; /* New color - Coral */
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 10px; /* Adds space between input and button */
+  transition: background-color 0.3s ease;
 }
+
+button:hover {
+  background-color: #e5673c; /* Darker shade on hover */
+}
+
 
 .loading {
   margin-top: 20px;
