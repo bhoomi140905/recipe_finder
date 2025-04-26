@@ -219,6 +219,19 @@ async function findRecipes() {
       ],
       instructions: "1. Sauté garlic and mushrooms.\n2. Add cream and cook until thick.\n3. Toast bread and top with mushrooms.\n4. Serve warm."
     },
+    {
+      title: "Cheese and Tomato Quesadilla",
+      image: "images/quesadilla.jpeg",
+      description: "Crispy tortilla filled with melty cheese and tomato.",
+      ingredients: [
+        "2 tortillas",
+        "1 tomato, sliced",
+        "100g cheese",
+        "Butter or oil"
+      ],
+      instructions: "1. Layer cheese and tomato between tortillas.\n2. Toast on both sides until golden.\n3. Cut and serve with dip."
+    },
+  
   
   
   
