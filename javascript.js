@@ -193,6 +193,20 @@ async function findRecipes() {
       ],
       instructions: "1. Remove mushroom stems.\n2. Mix garlic, cheese, and breadcrumbs.\n3. Fill mushrooms and bake for 15 min at 180°C.\n4. Serve hot."
     },
+    {
+      title: "Baked Egg in Tomato",
+      image: "images/baked-egg-tomato.jpeg",
+      description: "Egg baked inside a tomato, topped with herbs and cheese.",
+      ingredients: [
+        "2 large tomatoes",
+        "2 eggs",
+        "50g cheese",
+        "Salt and pepper",
+        "Herbs (optional)"
+      ],
+      instructions: "1. Scoop out center of tomato.\n2. Crack egg inside.\n3. Top with cheese and herbs.\n4. Bake for 15 min at 180°C.\n5. Serve hot."
+    },
+  
   
   
   
