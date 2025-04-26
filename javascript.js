@@ -129,7 +129,7 @@ async function findRecipes() {
     },
     {
       title: "Tomato cheese Omelette",
-      image: "images/tomato-omelette.jpeg",
+      image: "images/tomato-cheese-omelette.jpeg",
       description: "A tasty omelette with juicy tomatoes and melted cheese.",
       ingredients: [
         "2 eggs",
@@ -155,7 +155,7 @@ async function findRecipes() {
     },
     {
       title: "Tomato Basil Bruschetta",
-      image: "images/bruschetta.jpeg",
+      image: "images/tomato-basil-bruschetta.jpeg",
       description: "Crispy bread topped with fresh tomato and basil mix.",
       ingredients: [
         "1 baguette",
@@ -169,7 +169,7 @@ async function findRecipes() {
     },
     {
       title: "Egg Wrap",
-      image: "images/egg-wrap.jpg",
+      image: "images/egg-cheese-wrap.jpg",
       description: "Quick breakfast wrap with scrambled eggs and cheese.",
       ingredients: [
         "2 eggs",
