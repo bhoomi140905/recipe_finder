@@ -153,6 +153,21 @@ async function findRecipes() {
       ],
       instructions: "1. Mix garlic with butter and spread on bread.\n2. Top with cheese.\n3. Toast in oven until bubbly.\n4. Garnish with parsley and serve."
     },
+    {
+      title: "Tomato Basil Bruschetta",
+      image: "images/bruschetta.jpeg",
+      description: "Crispy bread topped with fresh tomato and basil mix.",
+      ingredients: [
+        "1 baguette",
+        "3 tomatoes",
+        "2 cloves garlic",
+        "Fresh basil leaves",
+        "Olive oil",
+        "Salt to taste"
+      ],
+      instructions: "1. Chop tomatoes and mix with basil, garlic, and oil.\n2. Slice and toast baguette.\n3. Spoon topping onto toast.\n4. Serve immediately."
+    },
+  
   
   
   ];
