@@ -142,7 +142,7 @@ async function findRecipes() {
     },
     {
       title: "Cheesy Garlic Toast",
-      image: "images/cheesy-garlic-toast.jpeg",
+      image: "images/cheesy-garlic-toast.jpg",
       description: "Crispy toast with garlic butter and gooey cheese topping.",
       ingredients: [
         "4 slices of bread",
@@ -169,7 +169,7 @@ async function findRecipes() {
     },
     {
       title: "Egg Cheese Wrap",
-      image: "images/egg-wrap.jpeg",
+      image: "images/egg-wrap.jpg",
       description: "Quick breakfast wrap with scrambled eggs and cheese.",
       ingredients: [
         "2 eggs",
