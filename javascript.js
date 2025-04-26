@@ -180,6 +180,20 @@ async function findRecipes() {
       ],
       instructions: "1. Scramble eggs with milk.\n2. Heat wrap, add cheese and eggs.\n3. Fold and toast slightly.\n4. Serve warm."
     },
+    {
+      title: "Stuffed Mushrooms",
+      image: "images/stuffed-mushrooms.jpeg",
+      description: "Mushrooms filled with cheesy garlic stuffing.",
+      ingredients: [
+        "10 large mushrooms",
+        "2 tbsp breadcrumbs",
+        "2 cloves garlic, minced",
+        "50g cheese",
+        "1 tbsp olive oil"
+      ],
+      instructions: "1. Remove mushroom stems.\n2. Mix garlic, cheese, and breadcrumbs.\n3. Fill mushrooms and bake for 15 min at 180°C.\n4. Serve hot."
+    },
+  
   
   
   
