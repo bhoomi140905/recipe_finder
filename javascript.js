@@ -18,7 +18,6 @@ async function findRecipes() {
     await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate delay
   
     const inputIngredients = input.split(',').map(i => i.trim());
-
     const sampleRecipes = [
       {
         title: "Tomato Cheese Pasta",
@@ -154,7 +153,7 @@ async function findRecipes() {
     ];
   
     
-        
+  
     const filteredRecipes = sampleRecipes.filter(recipe => {
       const recipeIngredients = recipe.ingredients.map(ing => ing.toLowerCase());
       const matchCount = inputIngredients.filter(ing =>
@@ -217,3 +216,9 @@ async function findRecipes() {
       closeModal();
     }
   });
+// 🆕 Pressing Enter triggers recipe search
+document.getElementById('ingredientInput').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    findRecipes();
+  }
+});
