@@ -206,6 +206,20 @@ async function findRecipes() {
       ],
       instructions: "1. Scoop out center of tomato.\n2. Crack egg inside.\n3. Top with cheese and herbs.\n4. Bake for 15 min at 180°C.\n5. Serve hot."
     },
+    {
+      title: "Creamy Mushroom Toast",
+      image: "images/creamy-mushroom-toast.jpeg",
+      description: "Buttered toast with creamy garlic mushrooms on top.",
+      ingredients: [
+        "200g mushrooms",
+        "2 slices of bread",
+        "2 tbsp cream",
+        "2 cloves garlic",
+        "1 tbsp butter"
+      ],
+      instructions: "1. Sauté garlic and mushrooms.\n2. Add cream and cook until thick.\n3. Toast bread and top with mushrooms.\n4. Serve warm."
+    },
+  
   
   
   
