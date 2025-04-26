@@ -126,7 +126,21 @@ async function findRecipes() {
         "2 eggs", "100g mushrooms", "50g cheese", "Salt and pepper", "Butter or oil"
       ],
       instructions: "1. Sauté mushrooms in butter.\n2. Beat eggs with salt and pepper.\n3. Pour over mushrooms and add cheese.\n4. Cook until set and fold."
-    }
+    },
+    {
+      title: "Tomato Cheese Omelette",
+      image: "images/tomato-omelette.jpeg",
+      description: "A tasty omelette with juicy tomatoes and melted cheese.",
+      ingredients: [
+        "2 eggs",
+        "1 tomato, chopped",
+        "50g cheese",
+        "Salt and pepper to taste",
+        "1 tbsp butter"
+      ],
+      instructions: "1. Beat eggs with salt and pepper.\n2. Heat butter in a pan.\n3. Add tomatoes, then pour in eggs.\n4. Add cheese and cook until set.\n5. Fold and serve."
+    },
+  
   ];
 
   const filteredRecipes = sampleRecipes.filter(recipe => {
