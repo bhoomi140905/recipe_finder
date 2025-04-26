@@ -229,15 +229,7 @@ async function findRecipes() {
       closeModal();
     }
   });
-<<<<<<< Updated upstream
 // 🆕 Pressing Enter triggers recipe search
 document.getElementById('ingredientInput').addEventListener('keydown', function(event) {
   if (event.key === 'Enter') {
-=======
-  // Trigger search on pressing Enter
-document.getElementById("ingredientInput").addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
->>>>>>> Stashed changes
-    findRecipes();
-  }
 });
