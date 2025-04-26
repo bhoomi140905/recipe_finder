@@ -149,6 +149,19 @@ async function findRecipes() {
           "Ice cubes"
         ],
         instructions: "1. Add all ingredients to a blender.\n2. Blend until smooth.\n3. Pour into a glass and enjoy cold."
+      },
+      {
+        title: "Mushroom Cheese Omelette",
+        image: "images/mushroom-omelette.jpeg",
+        description: "Fluffy omelette with mushrooms and cheese inside.",
+        ingredients: [
+          "2 eggs",
+          "100g mushrooms",
+          "50g cheese",
+          "Salt and pepper",
+          "Butter or oil"
+        ],
+        instructions: "1. Sauté mushrooms in butter.\n2. Beat eggs with salt and pepper.\n3. Pour over mushrooms and add cheese.\n4. Cook until set and fold."
       }
     ];
   
@@ -216,9 +229,15 @@ async function findRecipes() {
       closeModal();
     }
   });
+<<<<<<< Updated upstream
 // 🆕 Pressing Enter triggers recipe search
 document.getElementById('ingredientInput').addEventListener('keydown', function(event) {
   if (event.key === 'Enter') {
+=======
+  // Trigger search on pressing Enter
+document.getElementById("ingredientInput").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+>>>>>>> Stashed changes
     findRecipes();
   }
 });
