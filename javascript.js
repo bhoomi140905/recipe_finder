@@ -167,6 +167,20 @@ async function findRecipes() {
       ],
       instructions: "1. Chop tomatoes and mix with basil, garlic, and oil.\n2. Slice and toast baguette.\n3. Spoon topping onto toast.\n4. Serve immediately."
     },
+    {
+      title: "Egg Cheese Wrap",
+      image: "images/egg-wrap.jpeg",
+      description: "Quick breakfast wrap with scrambled eggs and cheese.",
+      ingredients: [
+        "2 eggs",
+        "1 tortilla wrap",
+        "50g cheese",
+        "1 tbsp milk",
+        "Butter or oil"
+      ],
+      instructions: "1. Scramble eggs with milk.\n2. Heat wrap, add cheese and eggs.\n3. Fold and toast slightly.\n4. Serve warm."
+    },
+  
   
   
   
