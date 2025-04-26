@@ -140,6 +140,20 @@ async function findRecipes() {
       ],
       instructions: "1. Beat eggs with salt and pepper.\n2. Heat butter in a pan.\n3. Add tomatoes, then pour in eggs.\n4. Add cheese and cook until set.\n5. Fold and serve."
     },
+    {
+      title: "Cheesy Garlic Toast",
+      image: "images/cheesy-garlic-toast.jpeg",
+      description: "Crispy toast with garlic butter and gooey cheese topping.",
+      ingredients: [
+        "4 slices of bread",
+        "2 tbsp butter",
+        "2 cloves garlic, minced",
+        "100g grated cheese",
+        "Parsley for garnish"
+      ],
+      instructions: "1. Mix garlic with butter and spread on bread.\n2. Top with cheese.\n3. Toast in oven until bubbly.\n4. Garnish with parsley and serve."
+    },
+  
   
   ];
 
