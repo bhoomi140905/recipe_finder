@@ -128,7 +128,7 @@ async function findRecipes() {
       instructions: "1. Sauté mushrooms in butter.\n2. Beat eggs with salt and pepper.\n3. Pour over mushrooms and add cheese.\n4. Cook until set and fold."
     },
     {
-      title: "Tomato Cheese Omelette",
+      title: "Tomato cheese Omelette",
       image: "images/tomato-omelette.jpeg",
       description: "A tasty omelette with juicy tomatoes and melted cheese.",
       ingredients: [
@@ -168,7 +168,7 @@ async function findRecipes() {
       instructions: "1. Chop tomatoes and mix with basil, garlic, and oil.\n2. Slice and toast baguette.\n3. Spoon topping onto toast.\n4. Serve immediately."
     },
     {
-      title: "Egg Cheese Wrap",
+      title: "Egg Wrap",
       image: "images/egg-wrap.jpg",
       description: "Quick breakfast wrap with scrambled eggs and cheese.",
       ingredients: [
