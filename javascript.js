@@ -231,6 +231,20 @@ async function findRecipes() {
       ],
       instructions: "1. Layer cheese and tomato between tortillas.\n2. Toast on both sides until golden.\n3. Cut and serve with dip."
     },
+    {
+      title: "Garlic Egg Fried Rice",
+      image: "images/egg-fried-rice.jpeg",
+      description: "Simple fried rice with egg and garlic flavor.",
+      ingredients: [
+        "1 cup cooked rice",
+        "2 eggs",
+        "2 cloves garlic",
+        "1 tbsp soy sauce",
+        "Oil and salt"
+      ],
+      instructions: "1. Scramble eggs and set aside.\n2. Sauté garlic, add rice and soy sauce.\n3. Mix in eggs.\n4. Stir fry and serve hot."
+    },
+  
   
   
   
