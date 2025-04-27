@@ -1,28 +1,41 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-image: url('images/background-image.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
-  text-align: center;
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  flex-direction: column; /* ← important */
+  justify-content: center; /* center vertically */
+  align-items: center; /* center horizontally */
+  text-align: center;
+  position: relative;
 }
 
-.intro-section {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(12px);
-  padding: 30px 40px;
-  border-radius: 20px;
-  max-width: 600px;
-  width: 100%;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+.container {
   z-index: 1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+/* Intro box */
+.intro-section {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  padding: 40px 20px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
 
 h1 {
   font-size: 3em;
